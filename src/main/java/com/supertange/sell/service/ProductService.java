@@ -1,6 +1,7 @@
 package com.supertange.sell.service;
 
 import com.supertange.sell.dataObject.ProductInfo;
+import com.supertange.sell.dto.CartDTO;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
@@ -18,6 +19,7 @@ public interface ProductService {
     Page<ProductInfo> findAll(Pageable pageable);
     ProductInfo save(ProductInfo productInfo);
     //减库存
-
+    void decreaseStock(List<CartDTO> cartDTOList);
     //加库存
+    void increaseStock(List<CartDTO> cartDTOList);
 }

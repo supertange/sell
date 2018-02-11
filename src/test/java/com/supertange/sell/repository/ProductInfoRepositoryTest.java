@@ -25,7 +25,7 @@ public class ProductInfoRepositoryTest {
         productInfo.setProductName("fa");
         productInfo.setProductPrice(BigDecimal.valueOf(12));
         productInfo.setProductId(String.valueOf(123));
-        productInfo.setProductStock(BigDecimal.valueOf(123));
+        productInfo.setProductStock(123);
         productInfo.setProductStatus(0);
         productInfoRepository.save(productInfo);
     }

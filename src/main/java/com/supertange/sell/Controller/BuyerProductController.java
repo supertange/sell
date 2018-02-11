@@ -6,7 +6,6 @@ import com.supertange.sell.VO.ProductVo;
 import com.supertange.sell.VO.ResultVo;
 import com.supertange.sell.dataObject.ProductCategory;
 import com.supertange.sell.dataObject.ProductInfo;
-import com.supertange.sell.repository.ProductCategoryRepository;
 import com.supertange.sell.service.CategoryService;
 import com.supertange.sell.service.ProductService;
 import org.springframework.beans.BeanUtils;
@@ -16,8 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 import java.util.stream.Collectors;
 
