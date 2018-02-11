@@ -1,7 +1,9 @@
 package com.supertange.sell.Utils;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.supertange.sell.VO.ResultVo;
 
+//@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ResultVoUtil {
     public static ResultVo success(Object object){
         ResultVo resultVo=new ResultVo();
